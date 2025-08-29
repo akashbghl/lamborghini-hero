@@ -19,7 +19,7 @@ const Hero = () => {
         <Navbar />
 
         {/* Hero Section  */}
-        <div className=" md:px-28 md:py-16 p-8 min-h-[600px] text-white grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className=" md:px-28 md:py-16 max-md:pt-20 p-8 min-h-[600px] text-white grid grid-cols-1 md:grid-cols-2 items-center">
           {/* text section  */}
           <div className="max-md:flex flex-col items-center justify-center">
             <motion.div
