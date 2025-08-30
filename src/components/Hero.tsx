@@ -8,8 +8,8 @@ const Hero = () => {
     backgroundSize: "cover",       
     backgroundPosition: "center",  
     backgroundRepeat: "no-repeat", 
-    width: "100vw",                
-    height: "100vh",               
+    width: "100%",                
+    height: "100%",               
   };
 
   return (
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/* image section  */}
-          <div className="mt-10">
+          <div className="relative mt-10">
             <motion.div 
             initial={{y:80 ,rotateX:-10 , opacity:0}}
             animate={{y:0 ,rotateX:0 ,opacity:1}}
@@ -57,7 +57,7 @@ const Hero = () => {
             initial={{x:-200,opacity:0}}
             animate={{x:0,opacity:1}}
             transition={{duration:0.6 ,delay:1.8}}
-            className="absolute text-7xl max-md:translate-y-[-260px] md:text-9xl font-bold text-white/5 top-10 translate-y-[-140px] translate-x-40"
+            className="absolute z-[2] text-6xl max-md:translate-y-[-340px] md:text-9xl font-bold text-white/5 top-10 md:translate-y-[-140px] md:translate-x-40"
             >
               SPORT
             </motion.p>
@@ -65,7 +65,7 @@ const Hero = () => {
               initial={{ x: -150, y: -80, opacity: 0 }}
               animate={{ x: 0, y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4, ease: 'easeInOut' }}
-              src={Lambo1} alt="lambo-avendator" className="relative z-[2] mt-10 md:mt-30 scale-130 drop-shadow-[6px_8px_15px_black]" />
+              src={Lambo1} alt="lambo-avendator" className="relative z-[3] mt-10 md:mt-30 scale-[1.3] drop-shadow-[6px_8px_15px_black]" />
           </div>
         </div>
       </div>
