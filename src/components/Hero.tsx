@@ -9,7 +9,7 @@ const Hero = () => {
     backgroundPosition: "center",  
     backgroundRepeat: "no-repeat", 
     width: "100%",                
-    height: "100%",               
+    height: "100vh",               
   };
 
   return (
@@ -19,14 +19,14 @@ const Hero = () => {
         <Navbar />
 
         {/* Hero Section  */}
-        <div className=" md:px-28 md:py-16 max-md:pt-20 p-8 min-h-[600px] text-white grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className=" md:px-28 md:py-16 max-md:pt-20 p-8 min-h-[600px] text-white grid grid-cols-1 md:grid-cols-2 items-center overflow-hidden">
           {/* text section  */}
           <div className="max-md:flex flex-col items-center justify-center">
             <motion.div
               initial={{ y: -500, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 1.2 }}
-              className="max-md:flex flex-col items-center justify-center"
+              className="max-md:flex flex-col items-center justify-center overflow-hidden"
             >
               <h1 className="max-md:text-center text-5xl md:text-7xl font-bold">LAMBORGHINI <br /> <span className="text-transparent [-webkit-text-stroke:1px_white]  [-webkit-text-stroke-color:currentColor]">AVENDATOR</span></h1>
               <button
